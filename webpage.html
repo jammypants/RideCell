@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <p class="counter">0</p>
+    <button class="count_btn" onclick="increment()">Click</button>
+    <script>
+        let count=0;
+        function increment()
+        {
+            count = count+1;
+            console.log(count);
+            let res = document.getElementsByClassName("counter");
+            res.innerHTML = count;
+        }
+    </script>
+</body>
+</html>
